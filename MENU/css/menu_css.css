@@ -43,7 +43,7 @@ h1{
  }
  .dwight{
     width: 80%;
-    height:80%;
+    height: auto;
     display:block;
     margin: auto ;
     padding-bottom: 1em;
@@ -52,49 +52,5 @@ h1{
    opacity: 50%;}
 
 @media(max-width:450px){
-   .repo{
-      background-color: #181818;;
-  
-  
-  }
-  h1{ 
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      color:#FFFFFF;
-      padding-top: 1em;
-  
-  }
-  .repo ul{
-      font-family: Arial, Helvetica, sans-serif;
-      list-style-type: none;
-      text-align: center;
-      padding: 1em;
-   }
-   .repo li{
-      display: inline;
-      text-align: center;
-      margin: 0 10px 0 0;
-   }
-   .repo li a {
-      padding: 2px 7px 2px 7px;
-      color:black;
-      background-color: #e4e4e4;
-      border: 1px solid #424242;
-      text-decoration: none;
-   }
-   .repo li a:hover{
-      background-color: #333333;
-      color: #ffffff;
-   }
-   .dwight{
-      width: 80%;
-      height:80%;
-      display:block;
-      margin: auto ;
-      padding-bottom: 1em;
-  }
-  .dwight:hover{
-     opacity: 50%;}
-
-
+   
 }
