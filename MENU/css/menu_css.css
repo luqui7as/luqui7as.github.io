@@ -32,7 +32,7 @@ h1{
  }
  .repo li a {
     padding: 2px 7px 2px 7px;
-    color:black;
+    color: black;
     background-color: #e4e4e4;
     border: 1px solid #424242;
     text-decoration: none;
@@ -52,5 +52,26 @@ h1{
    opacity: 50%;}
 
 @media(max-width:450px){
-   
+   body{
+background-color: blue;
+}
+    #container{
+    padding: 0;
+    margin: 30px auto;
+    width: 80%;
+    height: 100%;
+    }
+    .repo li{
+    text-align: center;
+    margin: 10 10px 10 10;
+ }
+ .repo li a {
+    padding: 2px 7px 2px 7px;
+    color: black;
+    background-color: #e4e4e4;
+    border: 1px solid #424242;
+    text-decoration: none;
+    
+ }
+    
 }
