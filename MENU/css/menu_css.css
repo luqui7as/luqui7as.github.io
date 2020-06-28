@@ -7,6 +7,9 @@ background-color: #5f5f5f;
     width: 800px;
     height: 80px;
 }
+p{  color: white;
+    text-align: center;
+    }
 .repo{
     background-color: #181818;;
 
@@ -19,25 +22,25 @@ h1{
     padding-top: 1em;
 
 }
-.repo ul{
+.btn{
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     text-align: center;
     padding: 1em;
  }
- .repo li{
+ .rep{
     display: inline;
     text-align: center;
     margin: 0 10px 0 0;
  }
- .repo li a {
+ .rep a {
     padding: 2px 7px 2px 7px;
     color: black;
     background-color: #e4e4e4;
     border: 1px solid #424242;
     text-decoration: none;
  }
- .repo li a:hover{
+ .rep a:hover{
     background-color: #333333;
     color: #ffffff;
  }
@@ -51,6 +54,24 @@ h1{
 
 .dwight:hover{
    opacity: 50%;}
+/*---------------------------*/
+h2{ margin-left: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*list es el ul y lista es el il*/
+.list{   
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1em;
+}
+.lista{
+    margin: 0 5em 0 4em;
+    color: white;
+    
+}
+
+/*---------------------------*/
 
 @media(max-width:450px){
    body{
