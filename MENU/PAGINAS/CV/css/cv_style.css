@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#container{
+    width: 50%;
+    height: 1000px;
+    margin: 25px auto;
+    box-shadow: 0px 2px 11px -2px #000000;
+
+}
+.foto{
+    background-color: white;
+    width: 34%;
+    height: 27%;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+}
+.foto img{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    border-radius: 7em;
+}
+header{
+ background-color: #F4F4F2;
+ width: 65%;
+ height: 27%;
+ float: right;
+}
+aside{
+    
+}
+@media(max-width:1024px){
+    #container{
+    width: 80%;
+    height: 1000px;
+    margin: 25px auto;
+    box-shadow: 0px 2px 11px -2px #000000;
+
+}
+    
+}
+    
