@@ -69,7 +69,15 @@ h2{ margin-left: 5%;
 .lista{
     margin: 0 5em 0 4em;
     color: white;
-    
+}
+
+.button{
+    background-color: #000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    font-size: 20px;
 }
 
 
@@ -82,12 +90,12 @@ background-color: blue;
     #container{
     padding: 0;
     margin: 30px auto;
-    width: 95%;
+    width: 80%;
     height: 100%;
     }
     .repo li{
-    text-align: ;
-    margin: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10 10px 10 10;
  }
  .repo li a {
     padding: 2px 7px 2px 7px;
