@@ -10,50 +10,81 @@
 </head>
 
 <body>
-    <nav>
-
+   <nav>
         <ul>
-            <li><a href="http://club-iava.com.ar/Album.htm">ÁLBUM</a></li>
-            <li><a href="http://club-iava.com.ar/Actividades.htm">ACTIVIDADES</a></li>
-            <li><a href="http://club-iava.com.ar/Inicio.htm">INICIO</a></li>
+            <li><a href="#"class="active">INICIO</a></li>
+            <li><a href="">INSCRIPCIÓN</a></li>
+            <li><a href="">ACTIVIDADES</a></li>
             <li><a href="">SOCIOS</a></li>
-            <li><a href="">CONTACTO</a></li>
-            <li><a href="">FAMOSOS</a></li>
             <li><a href="">LIBRO DE VISITAS</a></li>
-            <li><a href="">COMPETENCIAS</a></li>
-            <li><a href="">AGENCIAS FIAT</a></li>
-            <li><a href="">MANUALES</a></li>
-            <li><a href="">MISCLEANEOS</a></li>
-            <li><a href="">ROAD TEST</a></li>
-            <li><a href="">PELICULAS</a></li>
+            <li><a href="">CONTACTO</a></li>
         </ul>
-
     </nav>
     <div id="container">
-        <img src="assets/img/foto_iavaclub.PNG" alt="" class="main_image">
-        <h1>IAVA - SORPASSO - 128 - 133 - KIKITO - 125SE - DUNA SCX</h1>        
-        
-        <p>¿Siempre soñaste con escribir www.club-iava.com.ar en tu navegador e ingresar a tu mundo? </p>
-        <p> Hoy es una realidad, porque el Club IAVA original se ha modernizado para brindar al fanático y entusiasta, su nuevo sitio oficial. 
+        <div class="slideshow-container">
 
-            Conocé IAVA, de la mano de los que realmente saben de IAVA.
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="assets/img/uno.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
             
-            15 años de trayectoria con un importante trabajo de investigación nos avalan. 
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="assets/img/dos.png" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
             
-            <p>Un nuevo LIBRO DE VISITAS para que puedas dejar tu mensaje o bien intercambiar opiniones con otros socios y visitantes. </p>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assets/img/tres.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
             
-            <p>¿Querés inscribirte?, ya se encuentra disponible nuestra ficha de inscripción en nuestra sección INSCRIPCIÓN.</p> 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
-            <p>¿Querés ver fotografías del último encuentro?, ingresá a nuestra sección ACTIVIDADES.</p>
+            </div>
+            <br>
             
-            <p>PRÓXIMAMENTE MAS FOTOGRAFÍAS DE LOS ENCUENTROS.
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
             
-            <p>Juntos, construimos este sitio web, que tiene por objetivo mantener intacto el fanatismo por la mítica marca que marcó el corazón de la historia de la industria automotriz argentina. 
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
             
-            <p>NOVEDADES: desde la renovación de este sitio web, en tan sólo 4 meses hemos superado las 50.000 visitas. Nuestro agradecimiento para todos ustedes.</p>
-    
-    
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+
+
+
     </div>
-        
 </body>
 </html>
