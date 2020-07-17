@@ -10,81 +10,39 @@
 </head>
 
 <body>
-   <nav>
-        <ul>
-            <li><a href="#"class="active">INICIO</a></li>
-            <li><a href="">INSCRIPCIÓN</a></li>
-            <li><a href="">ACTIVIDADES</a></li>
-            <li><a href="">SOCIOS</a></li>
-            <li><a href="">LIBRO DE VISITAS</a></li>
-            <li><a href="">CONTACTO</a></li>
+  <header>
+    <img id="logo" src="assets/img/logo300.png" alt="logo">
+    <nav>
+        <ul class="nav_links">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">INSCRIPCIÓN</a></li>
+          <li><a href="#">ACTIVIDADES</a></li>
+          <li><a href="#">LIBRO DE VISITAS</a></li>
         </ul>
     </nav>
-    <div id="container">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="assets/img/uno.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="assets/img/dos.png" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="assets/img/tres.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-            
-            <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-            
-
-
-
-    </div>
+  </header>
+  <main>
+    
+    <div class="text">
+      <h2>Nuestra historia</h2>
+      <p class="historia">Todo comenzó cuando compré mi primer IAVA, le faltaba una buena restauración y para ello no conseguía mucha información, entonces pensé en ubicar a la gente que lo había desarrollado.
+      Tras una larga búsqueda pude dar con la persona que era el genio creador del IAVA, el nombre clave era el del Ingeniero Juan Carlos Fisanotti.</p>
+      <p class="historia">Para mediados del año 1993 estaba traspasando las rejas de la planta de EL PALOMAR, para tener una entrevista personal con él, debajo de mi brazo llevaba un cuestionario técnico sobre los modelos producidos.
+      Mayor fue mi alegría cuando después de un tiempo me llamaba su secretaria para volver a la oficina a retirar las respuestas y una serie de folletos ilustrativos, además de una breve charla con un hombre que siempre demostró total amabilidad, cordialidad, dándome detalles y anécdotas que alimentan mi pasión por los IAVA.</p>
+        
+      <p class="historia">En ese momento empezaba a nacer en mi mente la idea de formar un club de fanáticos de la marca de los cuatro hexágonos. Fue entonces que, leyendo el correo de una de las revistas automovilistas encontraba a Omar Johnson que escribía con la misma inquietud.</p>
+        
+      <p class="historia">Comenzaba una nueva búsqueda y una vez que ya nos conocíamos, para Marzo de 1994 éramos los socios fundadores del Club IAVA. Para sorpresa nuestra, en cada reunión venían más y nuevos entusiastas con sus joyas mecánicas y esto ocurre aún hoy.</p>
+      <p class="historia">Por otra parte nunca imagine que un auto podía ser el vínculo de una amistad y de un hecho social.
+      Tanto los hijos de Omar, así como también los de otros miembros del club comparten con mi familia momentos felices.</p>
+    
+    <h4>MIGUEL CHALLIOL</h4>
+    <p class="presidente">PRESIDENTE DEL CLUB IAVA</p>
+    
+  </div>
+  <div class="miguel">
+  <img src="assets/img/miguel_iava_blanco.jpg" alt="miguel_challiol">
+  </div>
+  </main>
 </body>
 </html>
