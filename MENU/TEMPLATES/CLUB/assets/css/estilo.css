@@ -93,3 +93,28 @@ h4{
   width: 500px;
   margin: 20% 10%;
 }
+@media (max-width:1732px){
+    
+  .text{
+    margin: 0;
+    width: 100%;
+    height: 40vh;
+    
+  }
+  .miguel{
+    display: none;
+    float: none;
+    width:100%;
+    height: 60px;
+  
+  }
+  .miguel img{
+    width: 300px;
+    display: block;
+    margin: 0 31.5%;
+   
+    
+  }
+
+
+}
