@@ -77,16 +77,76 @@ footer{
     height: 80px;
     background-color: #1e1b18;}
 
-/*-----------------------*/
-
+/*---Formulario---*/
+#formulario h1{
+    text-align: center;
+    font-family: Noto Sans JP;
+    color: aliceblue
+}
 #formulario{
-    width: 100px;
     margin: 25px auto;
+    width: 80%;
+    background-color: #0a2463;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1em;
+}
+fieldset{
+    padding: 1em;
+    overflow: hidden;
+    width: 100%;
+    margin: 25px auto;
+    background-color: #fffaff;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    border: 1px solid;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    
     
 }
+#formulario:hover{
+    
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);}
 
-
-
+.usuario{
+    width: 80%;
+    
+    }
+.auto{
+    width: 80%;
+}
+label{
+    font-family: Noto Sans JP;
+     display: inline;
+     margin: 1px;
+    
+}
+input{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+@media(max-width:750px){
+    #formulario{
+    margin: 25px auto;
+    width: 100%;
+    background-color: #0a2463;
+    border-radius: 0px 0px 0px 0px;
+    padding: 1em;
+}
+    
+}
+/*---Formulario---*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -180,3 +240,20 @@ footer{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+@media (max-width:768px){
+    body{
+        width:100%
+    }
+    header{
+        padding: 1em;
+    }
+ @media (max-width:229px){
+    body{
+        width:100%
+    }
+    header{
+        padding: 1em;
+    }
+ 
+
