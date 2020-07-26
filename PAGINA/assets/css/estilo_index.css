@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans JP;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0b132b;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo{
+    position: relative;
+    top: 10px
+}
+li{
+    padding: 0.5em;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+main{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+main p{
+    text-align: justify;
+    color: white;
+    font-weight: 330;
+}
+main h2{
+  text-align: justify;
+  color: white;
+  font-weight: 500;
+}
+
+a:hover:not(.active){
+    transition: ease 0.4s 0.3s ;
+    color: cyan;
+}
+@media(max-width:1080px){
+    main{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+li{
+    display: none;
+}
+.logo{
+    width: 100px;
+    height: 35px;
+    top:0;
+    float: left;
+}
+
+}
