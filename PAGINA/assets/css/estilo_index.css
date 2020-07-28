@@ -15,14 +15,14 @@ header{
     overflow: hidden;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
+    margin: 25px auto;
+    width: 70%;
+    padding: 0px;
 }
-.logo{
-    position: relative;
-    top: 10px;
-}
+
 li{
     padding: 0.5em;
     margin-left: 10px;
@@ -65,33 +65,37 @@ a:hover:not(.active){
     }
     .logo{
         display: inline;
-        top: 0px;
     }
-    ul{
+    ul {
         list-style: none;
         display: flex;
-        padding: 10px 10px;
+        justify-content: space-between ;
+        margin: 25px auto;
+        width: 90%;
+        padding: 0px;
+    }
+    
+    .colapso{
+        display: inline;
+        position: relative;
+        top: 5px;
     }
     .line1{
-        background-color: darkgoldenrod;
-        width: 30px;
+        background-color: darkgrey;
+        width: 20px;
         height: 3px;
-        border-radius: 10px;
     }
     .line2{
-        margin-top: 8px;
-        background-color: darkgoldenrod;
-        width: 30px;
+        background-color: darkgrey;
+        width: 20px;
         height: 3px;
-        border-radius: 10px;
+        margin-top: 5px;
     }
     .line3{
-        margin-top: 8px;
-        background-color: darkgoldenrod;
-        width: 30px;
+        background-color: darkgrey;
+        width: 20px;
         height: 3px;
-        border-radius: 10px;
-        }
-
+        margin-top: 5px;
+    }
 
 }
