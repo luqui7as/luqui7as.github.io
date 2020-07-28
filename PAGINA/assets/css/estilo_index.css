@@ -18,11 +18,10 @@ header{
 ul{
     list-style: none;
     display: flex;
-    justify-content: flex-start;
 }
 .logo{
     position: relative;
-    top: 10px
+    top: 10px;
 }
 li{
     padding: 0.5em;
@@ -60,15 +59,39 @@ a:hover:not(.active){
     display: block;
     margin: auto;
     width: 90%;
-}
-li{
+    }
+    li{
     display: none;
-}
-.logo{
-    width: 100px;
-    height: 35px;
-    top:0;
-    float: left;
-}
+    }
+    .logo{
+        display: inline;
+        top: 0px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding: 10px 10px;
+    }
+    .line1{
+        background-color: darkgoldenrod;
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+    }
+    .line2{
+        margin-top: 8px;
+        background-color: darkgoldenrod;
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+    }
+    .line3{
+        margin-top: 8px;
+        background-color: darkgoldenrod;
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        }
+
 
 }
