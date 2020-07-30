@@ -8,31 +8,28 @@
     <title>CLUB IAVA</title>
 </head>
 <body>
-    
-    <header>
-        <nav>
-           <div id="logo"><img src="assets/img/logo.png" alt="logo_iava" class="logoiava" width="80px" height="30px"></li>
-           </div>
-               <ul class="">
-               <li><a href="#">INICIO</a></li>
-               <li><a href="sub/GALERIA/GALERIA.html">GALERÍA</a></li>
-               <li><a href="#">INSCRIPCIÓN</a></li>
-               <li><a href="#">CONTACTO</a></li>
-           </ul>
-           <div class="dropdown">
-           <div id="burger">
-                   <div class="line1"></div>
-                   <div class="line2"></div>
-                   <div class="line3"></div>
-           </div>
-           <div class="dropdown-content">
-            <a href="#">CONTACTO</a>
-            <a href="#">INSCRIPCÍON</a>
-            <a href="sub/GALERIA/GALERIA.html">GALERÍA</a>
-            </div>
-        </div>
-       </nav>
-       </header>
+<nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="logo" style="padding: 12px 16px 1px 16px;">
+                <img src="assets/img/logo.png">
+                </a>
+                <a href="#home" class="active">INICIO</a>
+                <a href="#news">GALERÍA</a>
+                <a href="#contact">INSCRIPCIÓN</a>
+                <a href="#about">CONTACTO</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+                </nav>
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
         <body>
       <main>
     <h2>Nuestra historia</h2>
