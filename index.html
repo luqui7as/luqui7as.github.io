@@ -9,13 +9,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 body{
-    background-color: lightgrey;
-    height: 100%;
-    margin: 0;
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 0;
 }
 h1{
-    color: black;
-    text-shadow: 2px 2px white;
+    color: white;
+    text-shadow: 2px 2px black;
     font-family: sans-serif;
     font-family: Roboto;
     font-size: 60px;
@@ -34,12 +35,14 @@ button{
     display: inline-block;
     margin: 0;
 }
+button p{
+    font-size: 18px;
+}
 .btn{
     background-color: #d62828;
     border: none;
     color: white;
     padding: 15px 32px;
-
 }
 
 button:hover{
