@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilo_index.css">
+    <link rel="stylesheet" href="css/estilo_galeria.css">
+
+    <title>GALERÍA</title>
+</head>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="logo" style="padding: 12px 16px 1px 16px;">
+            <img src="../../assets/img/logo.png">
+            </a>
+            <a href="../../index.html">INICIO</a>
+            <a href="#" class="active">GALERÍA</a>
+            <a href="#contact">INSCRIPCIÓN</a>
+            <a href="#about">CONTACTO</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            </nav>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    <main>
+        <h1>GALERÍA</h1>
+        <p>En esta seccion encontrara todo lo referido a documentos de imagen de las siguientes categorías dando click en los botones.</p>
+        <div id="botones">
+          <a href="#">
+            <div id="item" class="item1"><p>PUBLICIDADES</p></div></a>
+          <a href="#"><div id="item" class="item2"><p>PILOTOS</p></div></a>
+          <a href="#"><div id="item" class="item3"><p>MODELOS</p></div></a>
+          <a href="#"><div id="item" class="item4"><p>FAMOSOS</p></div></a>
+          <a href="#"><div id="item" class="item5"><p>AGENCIAS FIAT</p></div></a>
+          <a href="#"><div id="item" class="item6"><p>COMPETENCIAS</p></div></a>
+          <a href="#"><div id="item" class="item7"><p>MANUALES</p></div></a>
+          <a href="#"><div id="item" class="item8"><p>MISCELEANEOS</p></div></a>
+          <a href="#"><div id="item" class="item9"><p>PELÍCULAS</p></div></a>
+          <a href="#"><div id="item" class="item9"><p>ROAD TEST</p></div></a>
+        </div>
+
+
+    </main>
+</body>
+</html>
