@@ -31,38 +31,32 @@ h1{
 }
 /*------------------*/
 button{
-    width: 15%;
+    width: 50%;
     display: inline-block;
-    margin: 0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+}
+#btn-3{
+    background-color: rgba(128, 255, 0, 0.651);
 }
 button p{
     font-size: 18px;
 }
 .btn{
     background-color: #d62828;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+    float: left;
 }
-
 button:hover{
     opacity: 0.7;
-    transition: 0.3s ease 0.3s;
-    
+    transition: 0.3s ease 0.3s;   
 }
 .btn-2{
     background-color: #fcbf49;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+    float: right;
 }
 a{ text-decoration: none;
     width: 100%;
-}
-@media (max-width:560px){
-button{
-    display: initial;
-}
 }
 @media (max-width:952px){
   #container{
@@ -72,13 +66,7 @@ button{
 }
 button{
     width: 50%;
-    margin: 0;
-}
-.btn-2{
-    float: right;
-}
-
-}
+}}
 </style>
 </head>
 
@@ -91,6 +79,9 @@ button{
        <a href=""><button class="btn-2">
         <p>E-COMERCE JS</p>    
         </button></a>
+        <a href=""><button class="btn" id="btn-3">
+            <p>AP</p>    
+            </button></a>
   </div>
 
 
