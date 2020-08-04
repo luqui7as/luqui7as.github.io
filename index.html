@@ -31,7 +31,7 @@ h1{
 }
 /*------------------*/
 button{
-    width: 50%;
+    width: 25%;
     display: inline-block;
     border: none;
     color: white;
@@ -54,19 +54,25 @@ button:hover{
 }
 .btn-2{
     background-color: #fcbf49;
-    float: right;
+    
 }
 a{ text-decoration: none;
     width: 100%;
 }
 @media (max-width:952px){
-  #container{
+    
+    button{
+    width: 50%;
+    display: inline-block;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+
+    }
+    #container{
     margin: 25px auto;
     width: 90%;
     overflow: hidden;
-}
-button{
-    width: 50%;
 }}
 </style>
 </head>
@@ -74,15 +80,18 @@ button{
 <body>
   <h1>Menú</h1>
   <div id="container">
-      <a href="content/CLUBIAVA/index.html"><button class="btn">
-        <p>CLUB IAVA</p>    
+    <a href="content/CLUBIAVA/index.html">
+        <button class="btn">
+        <p>CLUBIAVA</p>    
         </button></a>
-       <a href=""><button class="btn-2">
-        <p>E-COMERCE JS</p>    
+    <a href="">
+        <button class="btn-2">
+        <p>JS</p>    
         </button></a>
-        <a href=""><button class="btn-3">
-            <p>AP</p>    
-            </button></a>
+    <a href="">
+        <button class="btn-3">
+        <p>AP</p>    
+        </button></a>
   </div>
 
 
