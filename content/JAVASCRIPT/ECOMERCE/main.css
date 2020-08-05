@@ -55,3 +55,9 @@ body{
     border-radius: 30%;
     color: var(--mainWhite);
 }
+.hero{
+    min-height: calc(100vh - 60px);
+
+
+
+}
