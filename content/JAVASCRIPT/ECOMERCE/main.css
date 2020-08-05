@@ -27,6 +27,9 @@ body{
     background: rgb(231, 226, 221);
     z-index: 1;
 }
+.navbar img{
+    width: 60px;
+}
 .navbar-center{
     width: 100%;
     max-width: 1170px;
@@ -35,4 +38,20 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+}
+.nav-icon{
+    font-size: 1.5rem;
+}
+.cart-btn{
+    position: relative;
+    cursor: pointer;
+}
+.cart-items{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainWhite);
 }
