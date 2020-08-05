@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 :root{
-    --primaryColor: #f09d51;
-    --mainWhite: #fff;
-    --mainBlack: #222;
-    --mainGrey: #ececec;
+    --primaryColor: #ef233c;
+    --mainWhite: #edf2f4;
+    --mainBlack: #2b2d42;
+    --mainGrey: #8d99ae;
+    --mainNavbar: #2b2d42 ;
     --mainSpacing: 0.1rem;
     --mainTransition: all 0.3s linear;
 }
@@ -17,6 +18,7 @@ body{
     background: var(--mainWhite);
     font-family: "Lato";
 }
+/*---Navbar---*/
 .navbar{
     position: sticky;
     top: 0;
@@ -24,7 +26,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    background: rgb(231, 226, 221);
+    background: var(--mainGrey);
     z-index: 1;
 }
 .navbar img{
@@ -55,6 +57,8 @@ body{
     border-radius: 30%;
     color: var(--mainWhite);
 }
+/*---End Navbar---*/
+/*---Hero---*/
 .hero{
     min-height: calc(100vh - 60px);
     background: url('back_1.jpg') center/cover no-repeat;
@@ -88,4 +92,78 @@ body{
 .banner-btn:hover{
     background: transparent;
     color: var(--primaryColor);
+}
+/*---End of Hero---*/
+/*---Products---*/
+.products{
+    padding: 4rem 0;
+}
+.section-title h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+}
+.products-center{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));*/
+    grid-template-columns: 1fr;
+    grid-column-gap:1.5rem;
+    grid-row-gap: 2rem;
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+}
+.bag-btn{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
+}
+.bag-btn:hover{
+    color: var(--mainWhite);
+}
+.fa-shopping-cart{
+    margin-right: 0.5rem;
+}
+.img-container:hover .bag-btn{
+    transform: translateX(0);
+}
+.product-img{
+    display: block;
+    min-height:12rem;
+}
+.img-container:hover .product-img{
+    transition: ease 0.3s 0.1s;
+    opacity: 0.5;
+}
+.product h3{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+}
+.product h4{
+    margin-top: 0.7rem;
+    letter-spacing: var(--mainSpacing);
+    color: var(--primaryColor);
+    text-align: center;
+}
+/*--Cart--*/
+.cart-overlay{
+    
 }
