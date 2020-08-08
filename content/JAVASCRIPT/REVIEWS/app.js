@@ -72,4 +72,11 @@ prevBtn.addEventListener('click', function(){
         currentItem = reviews.length-1;
     } 
     showMovie(currentItem);
-})
+});
+
+//mostrar pelicula random
+randomBtn.addEventListener("click",function(){
+    currentItem = Math.floor(Math.random()*reviews.length);
+    console.log(currentItem);
+    showMovie();
+});

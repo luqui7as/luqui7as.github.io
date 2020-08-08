@@ -33,3 +33,10 @@ img{
     margin: auto;
     max-width: 200px;
 }
+button{
+    height: 50px;
+    background-color: transparent;
+}
+.next-btn, .prev-btn{
+    width: 40px;
+}
