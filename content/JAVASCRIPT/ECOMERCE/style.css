@@ -57,6 +57,9 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.product{
+    margin: 5px;
+}
 
 /*---End of Container----*/
 #img-product{
