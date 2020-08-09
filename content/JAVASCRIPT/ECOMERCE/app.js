@@ -33,8 +33,16 @@ for(let i=0; i < addcart.length; i++){
     } )
 }
 
+function onLoadCartNumbers(){ //va a revisar si exis
+    let productNumbers=localStorage.getItem('cartnum');
+    if(productNumbers){
+        document.querySelector('.item').textContent = productNumbers;
+
+    }
+}
+
 function cartnum(){
-    let productNumbers=localStorage.getItem('cartnum', 1) //Esto es para que se guarde la variable y que no se borre al recargar
+    let productNumbers=localStorage.getItem('cartnum'); //Esto es para que se guarde la variable y que no se borre al recargar
     console.log(productNumbers);
     productNumbers = parseInt(productNumbers); //con esto lo convierto a numero antes estaba como string
     
@@ -47,4 +55,5 @@ function cartnum(){
     }
     
 }
+onLoadCartNumbers();
 
