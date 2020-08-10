@@ -16,10 +16,8 @@ nav{
 .nav-center{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1090px;
-    margin: 25px auto;
-    margin-top: 0;
+    /* align-items: center; */
+    max-width: 1190px;
 }
 nav{
     background-color: #ffffff;
@@ -34,7 +32,8 @@ nav{
 }
 ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-right: 30px;
     list-style: none;
 }
 li{
@@ -58,9 +57,47 @@ a:hover{
     transition: ease 0.3s;
 }
 
-/*Navbar*/
+/* End Navbar*/
+/*Main*/
+main{
+    background-color: aquamarine;
+    max-width: 1190px;
+    margin: 25px auto;
+    overflow: hidden;
+    margin-top: 0;
+}
+/* End Main */
+/*Container*/
+.container{
+    padding: 1em;
+    background-color: azure;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+h3{
+    text-align: center;
+    width: 250px;
+    padding: 1em;
+}
+/*End of Container*/
+/*Filter*/
+.filter{
+    float: right;
+}
+/*End of Filter*/
 
-@media (max-width:700px){
+/*Product*/
+#product_img{
+    width: 250px;
+}
+.product{
+    text-align: center;
+    margin: 10px;
+}
+/*End of Product*/
+@media (max-width:700px){/* Saco la felicitacion porque no entra*/
     .congrat{
         display: none;
     }
