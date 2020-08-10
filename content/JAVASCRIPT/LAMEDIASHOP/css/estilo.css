@@ -97,8 +97,15 @@ h3{
     margin: 10px;
 }
 /*End of Product*/
+/*Responsive */
 @media (max-width:700px){/* Saco la felicitacion porque no entra*/
     .congrat{
         display: none;
     }
 }
+/*Responsive */
+@media (max-width:320px){/* Saco la felicitacion porque no entra*/
+    
+}
+/*Responsive */
+/*Responsive */
